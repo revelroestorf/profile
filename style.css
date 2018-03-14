@@ -1,0 +1,22 @@
+#navbar {
+  background-color: black;
+  height: 80px;
+  color: white;
+  /* padding-top: 25px; */
+  padding-right: 30px;
+}
+#logo {
+  /* padding-left: 30px; */
+}
+#myname {
+  /* display: flex; */
+  padding-left: 60px;
+  letter-spacing: 5px;
+  font-weight: lighter;
+  color: white;
+}
+#navtext {
+  color: white;
+  font-weight: lighter;
+  padding-right: 50px;
+}

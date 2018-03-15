@@ -1,0 +1,92 @@
+.my-navbar {
+  background-color: black;
+  height: 80px;
+}
+
+.my-navbar .name {
+  padding-left: 20px;
+  letter-spacing: 5px;
+  font-weight: lighter;
+}
+
+
+body {
+  background-color: #b9bbba;
+}
+
+
+
+}
+.page-heading {
+  /* background-color: blue; */
+  font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  letter-spacing: 0.80rem;
+  font-size: 100px;
+  /* padding-left: 0 !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important; */
+}
+.work-sub {
+  background-color: pink;
+
+  font-style: normal;
+  letter-spacing: 0.40rem;
+  font-size: 20px;
+  /* top: 25px; */
+  /* left: 20px; */
+}
+.work-name-container {
+  background-color: brown;
+
+  padding-top: 30px;
+  /* padding-bottom: 0 !important;
+  margin-bottom: 0 !important; */
+}
+.work-name {
+  background-color: orange;
+
+  font-size: 30px;
+  /* padding-bottom: 0 !important;
+  margin-bottom: 0 !important; */
+}
+.work-name-sub {
+  background-color: yellow;
+
+  /* padding-bottom: 0 !important;
+  margin-bottom: 0 !important; */
+}
+.img-container {
+  background-color: green;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.img {
+  /* background-color: red; */
+
+  height: 400px;
+  padding: 0 !important;
+  /* padding-left: 0 !important;
+  padding-right: 0 !important; */
+  margin-bottom: 20px;
+  /* border-radius: 10px; */
+  /* display: flex; */
+  /* align-items: center; */
+}
+/* @media (max-width: @screen-xs-max) { ... }
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... } */
+
+/* @media (min-width: @screen-lg-min) {
+.container .work-sub {
+  top: 25px
+} */
+
+.myface {
+  margin-top: 80px;
+  width: 100vw;
+}
+  .greeting {
+  padding-top: 200px;
+}

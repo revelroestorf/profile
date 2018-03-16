@@ -11,7 +11,7 @@ nav {
   grid-template-columns: 1fr 3fr 0.6fr 0.6fr 0.6fr;
   align-items: center;
   padding-right: 2vw;
-
+  
 }
 .name {
   color: white;
@@ -29,10 +29,10 @@ nav {
 header {
   position: relative;
   top: 30px;
+  margin-bottom: 60px;
 }
 .page-heading {
   position: relative;
-  top: 5px;
   margin-left: 4vw;
   font-style: normal;
   font-size: 100px;
@@ -45,79 +45,91 @@ header {
   font-size: 30px;
   letter-spacing: 0.6rem;
 }
-
 .project {
-  padding: 5vw 0 0 5vw;
-
+  padding: 0 10px 0 10px;
+  margin: 55px auto 0 auto;
+  width: 90%;
+  border: solid grey 5px;
+  border-radius: 20px;
 }
 .heading {
-  font-style: normal;
-  font-size: 30px;
-
+  margin: 15;
+  text-align: center;
+  font-size: 2rem;
 }
 .description-summary {
-  font-style: normal;
-  padding-left: 5vw;
-
+  text-align: center;
 }
 .screenshots {
-  margin: 3vw 5vw 3vw 5vw;
+  margin: 55px 5vw 3vw 5vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
 }
-.img {
+.images {
   width: 40vw;
+  max-width: 300px;
   height: 40vw;
+  max-height: 300px;
   border: solid 5px #ddd;
   border-radius: 10px;
   box-shadow: 8px 8px 10px #7C7C7C, -8px 8px 10px #7C7C7C;
 }
-
+.footer {
+  text-align: center;
+}
+.divider {
+  height: 200px;
+}
 
 @media screen and (max-width: 950px) {
 
   nav {
     grid-template-rows: 40px 40px;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    padding-right: 2vw;
-  }
-  .nav-item1 {
-    padding-left: 140px;
-  }
-  .nav-item2 {
-    padding-left: 100px;
-  }
-  .nav-item3 {
-    padding-left: 80px;
-    /* margin-right: 10px; */
+    grid-template-columns: 120px 1fr 1fr 1fr;
+    justify-items: center;
   }
   .logo {
     height: 120px;
     width: 120px;
-}
+  }
   .name {
+    font-size: 1rem;
     padding-left: 0px;
     letter-spacing: 0.6rem;
-    grid-column: 2/4;
-    align-self: center;
+    grid-column: 2/5;
   }
+  .nav-item1 {
+    grid-column: 2/3;
+    font-size: 0.8rem;
+
+  }
+  .nav-item2 {
+    grid-column: 3/4;
+    font-size: 0.8rem;
+
+  }
+  .nav-item3 {
+    grid-column: 4/5;
+    font-size: 0.8rem;
+}
+  .project {
+    grid-template-rows: 30px 40px;
+    grid-template-columns: 1fr;
+  }
+  .description-summary {
+    grid-row: 2;
+  }
+
   .screenshots {
-    /* margin: 10vw; */
-    /* display: block; */
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 
   }
-  .img {
+  .images {
     width: 60vw;
     height: 60vw;
-}
-.img2 {
-  margin-top: 3vw;
 }
 }
 
@@ -131,9 +143,43 @@ header {
 @media screen and (max-width: 660px) {
 
 .page-heading-sub {
+  margin-left: 1vw;
   font-size: 20px;
   letter-spacing: 0.2rem;
-  margin-left: 5vw;
+}
+.page-heading {
+  font-size: 80px;
+}
+}
+@media screen and (max-width: 550px) {
+  .name {
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+  }
+  .nav-item1 {
+    grid-column: 2/3;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+
+  }
+  .nav-item2 {
+    grid-column: 3/4;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+
+  }
+  .nav-item3 {
+    grid-column: 4/5;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+}
+.page-heading {
+  font-size: 60px;
+}
 
 }
-}
+@media screen and (max-width: 420px) {
+  .page-heading-sub {
+    font-size: 18px;
+    letter-spacing: 0.0rem;
+  }

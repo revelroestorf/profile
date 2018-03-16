@@ -1,11 +1,7 @@
-
 body {
   font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
   font-style: normal;
-  height: 100vh;
-  width: 100vw;
-  margin: 0px;
-  overflow: hidden;
+  margin: 0;
 }
 nav {
   background-color: black;
@@ -30,51 +26,34 @@ nav {
   font-style: normal;
   letter-spacing: 0.2rem;
 }
-.container {
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/img-home3.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: right 0px top 0px;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 50px 15vw 15vw 15vw 15vw 15vw;
-  grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
-}
-h1 {
-  grid-column: 1/5;
-  padding-left: 5vw;
-  grid-row: 2/3;
-}
-.h1 {
-  grid-column: 1/5;
-}
-p {
-    padding-left: 5vw;
-    grid-row: 3/4;
-}
-.p {
-font-size: 1.2rem;
-grid-column: 1/5;
-}
-h3 {
-    grid-row: 4/5;
-    padding-left: 5vw;
-}
-.care {
-  grid-column: 1;
-}
-.empathise {
-  grid-column: 2;
-}
-.define {
-  grid-column: 3;
-}
-.solve {
-  grid-column: 4;
-}
 
+.page-heading {
+  position: relative;
+  top: 5px;
+  margin-left: 4vw;
+  font-style: normal;
+  font-size: 100px;
+
+}
+.page-heading-sub {
+  margin-left: 10vw;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 0.6rem;
+}
+.icon-list {
+
+}
+.email-icon {
+  padding: 100px;
+}
+.linkedin-icon {
+
+}
+.github-icon {
+
+}
 
 @media screen and (max-width: 950px) {
 

@@ -2,6 +2,7 @@ body {
   font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
   font-style: normal;
   margin: 0;
+  overflow: hidden;
 }
 nav {
   background-color: black;
@@ -27,6 +28,11 @@ nav {
   letter-spacing: 0.2rem;
 }
 
+/* COPY TO OTHER CSS FILES! */
+header {
+  position: relative;
+  top: 30px;
+}
 .page-heading {
   position: relative;
   top: 5px;
@@ -43,35 +49,44 @@ nav {
   letter-spacing: 0.6rem;
 }
 
-.project {
-  padding: 5vw 0 0 5vw;
+
+main {
+  margin: 3vw 50vw 2vw 10vw;
+  line-height: 20px;
+}
+/* main {
+  margin: 3vw 5vw 2vw 5vw;
+  line-height: 20px;
+} */
+p {
 
 }
-.heading {
-  font-style: normal;
-  font-size: 30px;
-
+.contact-link {
+  text-decoration: none;
 }
-.description-summary {
-  font-style: normal;
-  padding-left: 5vw;
-
+.last-p {
+  font-style: italic;
 }
-.screenshots {
-  margin: 3vw 5vw 3vw 5vw;
+footer {
+  margin: 0vw 4vw 2vw 4vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
 }
 .img {
-  width: 40vw;
-  height: 40vw;
-  border: solid 5px #ddd;
-  border-radius: 10px;
-  box-shadow: 8px 8px 10px #7C7C7C, -8px 8px 10px #7C7C7C;
+  height: 8vw;
+  width: 13vw;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
 }
 
+@media screen and (max-width: 1300px) {
+
+main {
+  margin: 8vw 25vw 8vw 8vw;
+}
+}
 
 @media screen and (max-width: 950px) {
 
@@ -101,20 +116,8 @@ nav {
     grid-column: 2/4;
     align-self: center;
   }
-  .screenshots {
-    /* margin: 10vw; */
-    /* display: block; */
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-  }
-  .img {
-    width: 60vw;
-    height: 60vw;
-}
-.img2 {
-  margin-top: 3vw;
+main {
+  margin: 10vw 25vw 8vw 10vw;
 }
 }
 

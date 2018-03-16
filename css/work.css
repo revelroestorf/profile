@@ -1,6 +1,9 @@
 body {
   font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
   font-style: normal;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
   margin: 0;
 }
 nav {
@@ -26,7 +29,10 @@ nav {
   font-style: normal;
   letter-spacing: 0.2rem;
 }
-
+header {
+  position: relative;
+  top: 30px;
+}
 .page-heading {
   position: relative;
   top: 5px;

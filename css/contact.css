@@ -1,6 +1,9 @@
 body {
   font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
   font-style: normal;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
   margin: 0;
 }
 nav {
@@ -26,7 +29,10 @@ nav {
   font-style: normal;
   letter-spacing: 0.2rem;
 }
-
+header {
+  position: relative;
+  top: 30px;
+}
 .page-heading {
   position: relative;
   top: 5px;
@@ -42,31 +48,43 @@ nav {
   font-size: 30px;
   letter-spacing: 0.6rem;
 }
-
-
-
-
-
-
-
-
-
+main {
+  height: 100vh;
+  width: 100vw;
+}
+main div {
+  margin: auto;
+  height: 500px;
+  width: 60vw;
+}
 .icon-list {
-  display: inline-block;
-position: relative;
-left: 200px;
+	display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 
 }
+.icon-list a {
+  text-decoration: none;
+  color: grey;
+}
+
 .email-icon {
-  margin-right: 100px;
 }
 .linkedin-icon {
+margin: 0 50px 0 40px;
 
 }
 .github-icon {
 
 }
-
+em {
+  position: relative;
+  bottom: 20px;
+  margin-right: 5vw;
+  float: right;
+  font-size: 25px;
+}
 
 
 
@@ -110,3 +128,10 @@ left: 200px;
     align-self: center;
   }
 }
+
+@media screen and (max-width: 700px) {
+
+.page-heading {
+font-size: 70px;
+}
+{

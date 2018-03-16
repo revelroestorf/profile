@@ -42,11 +42,23 @@ nav {
   font-size: 30px;
   letter-spacing: 0.6rem;
 }
+
+
+
+
+
+
+
+
+
 .icon-list {
+  display: inline-block;
+position: relative;
+left: 200px;
 
 }
 .email-icon {
-  padding: 100px;
+  margin-right: 100px;
 }
 .linkedin-icon {
 
@@ -54,6 +66,20 @@ nav {
 .github-icon {
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 950px) {
 

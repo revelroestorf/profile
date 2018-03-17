@@ -2,6 +2,7 @@ body {
   font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
   font-style: normal;
   margin: 0;
+  background: #b9bbba;
 }
 nav {
   background-color: black;
@@ -11,6 +12,9 @@ nav {
   grid-template-columns: 250px 3fr 0.6fr 0.6fr 0.6fr;
   align-items: center;
   grid-template-rows: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
 
 }
 .logo {
@@ -30,26 +34,26 @@ nav {
 }
 header {
   position: relative;
-  top: 30px;
-  margin-bottom: 60px;
+  top: 160px;
+  margin-bottom: 200px;
 }
 .page-heading {
   position: relative;
   margin-left: 4vw;
   font-style: normal;
-  font-size: 100px;
+  font-size: 30px;
 
 }
 .page-heading-sub {
   margin-left: 10vw;
   font-style: normal;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 25px;
   letter-spacing: 0.6rem;
 }
 .header-box {
   padding: 0 10px 0 10px;
-  margin: 55px auto 0 auto;
+  margin: 0 auto 0 auto;
   width: 90%;
   border: solid grey 5px;
   border-radius: 20px;
@@ -78,10 +82,11 @@ header {
   border-radius: 10px;
   box-shadow: 8px 8px 10px #7C7C7C, -8px 8px 10px #7C7C7C;
 }
+
 .footer-box {
   text-align: center;
   padding: 0 10px 0 10px;
-  margin: 55px auto 0 auto;
+  margin: 55px auto 80px auto;
   width: 90%;
   border: solid grey 5px;
   border-radius: 20px;
@@ -94,11 +99,91 @@ a {
   color:
 }
 .divider {
-  height: 50px;
+  height: 30px;
 }
 
-@media screen and (max-width: 950px) {
 
+
+
+@-webkit-keyframes wobble {
+ 16.65% {
+   transform: translateY(8px);
+ }
+ 33.3% {
+   transform: translateY(-6px);
+ }
+ 49.95% {
+   transform: translateY(4px);
+ }
+ 66.6% {
+   transform: translateY(-2px);
+ }
+ 83.25% {
+   transform: translateY(1px);
+ }
+ 100% {
+   transform: translateY(0);
+ }
+}
+@keyframes wobble {
+ 16.65% {
+   transform: translateY(8px);
+ }
+ 33.3% {
+   transform: translateY(-6px);
+ }
+ 49.95% {
+   transform: translateY(4px);
+ }
+ 66.6% {
+   transform: translateY(-2px);
+ }
+ 83.25% {
+   transform: translateY(1px);
+ }
+ 100% {
+   transform: translateY(0);
+ }
+}
+
+.wobble {
+ display: inline-block;
+ transform: translateZ(0);
+ box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.wobble:hover {
+ animation-name: wobble;
+ animation-duration: 1s;
+ animation-timing-function: ease-in-out;
+ animation-iteration-count: 1;
+}
+
+.float {
+ transition: all .3s ease-out;
+}
+.float:hover {
+ transform: translate(0px,-10px);
+}
+
+.grow1 {
+ transition: all 0.5s ease-out;
+}
+.grow1:hover {
+ transform: scale(1.8) translate(80px, 0px);
+}
+
+.grow2 {
+ transition: all 0.5s ease-out;
+}
+.grow2:hover {
+ transform: scale(1.8) translate(-80px, 0px);
+}
+
+
+
+
+
+@media screen and (max-width: 950px) {
   nav {
     grid-template-rows: 40px 40px;
     grid-template-columns: 120px 1fr 1fr 1fr;
@@ -128,6 +213,10 @@ a {
     grid-column: 4/5;
     font-size: 0.8rem;
 }
+.page-heading-sub {
+  font-size: 20px;
+  letter-spacing: 0.2rem;
+}
   .header-box {
     grid-template-rows: 30px 40px;
     grid-template-columns: 1fr;
@@ -135,35 +224,35 @@ a {
   .description-summary {
     grid-row: 2;
   }
-
   .screenshots {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-
   }
   .images {
     width: 60vw;
     height: 60vw;
 }
 }
-
-@media screen and (max-width: 810px) {
-
-.page-heading-sub {
-  letter-spacing: 0.2rem;
+@media screen and (max-width: 688px) {
+  .page-heading-sub {
+    margin-left: 5vw;
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+  }
+  .grow1:hover {
+   transform: scale(1.6) translate(0px, 0px);
+  }
+  .grow2:hover {
+   transform: scale(1.6) translate(0px, 0px);
+  }
 }
-}
-
-@media screen and (max-width: 660px) {
-
-.page-heading-sub {
-  margin-left: 1vw;
-  font-size: 20px;
-  letter-spacing: 0.2rem;
-}
-.page-heading {
-  font-size: 80px;
+@media screen and (max-width: 600px) {
+  .page-heading-sub {
+    line-height: 60px;
+    margin-left: 40vw;
+    font-size: 18px;
+    letter-spacing: 0.1rem;
 }
 }
 @media screen and (max-width: 550px) {
@@ -175,13 +264,11 @@ a {
     grid-column: 2/3;
     font-size: 0.6rem;
     letter-spacing: 0.1rem;
-
   }
   .nav-item2 {
     grid-column: 3/4;
     font-size: 0.6rem;
     letter-spacing: 0.1rem;
-
   }
   .nav-item3 {
     grid-column: 4/5;
@@ -189,12 +276,11 @@ a {
     letter-spacing: 0.1rem;
 }
 .page-heading {
-  font-size: 60px;
+  font-size: 30px;
 }
-
 }
 @media screen and (max-width: 420px) {
-  .page-heading-sub {
+  /* .page-heading-sub {
     font-size: 18px;
-    letter-spacing: 0.0rem;
+    letter-spacing: 0.0rem; */
   }

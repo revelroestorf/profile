@@ -9,14 +9,17 @@ nav {
   color: white;
   font-weight: lighter;
   display: grid;
-  grid-template-columns: 1fr 3fr 0.6fr 0.6fr 0.6fr;
+  grid-template-columns: 250px 3fr 0.6fr 0.6fr 0.6fr;
   align-items: center;
+  grid-template-rows: 100px;
 
+}
+.logo {
+  height: 100px;
 }
 .name {
   color: white;
   text-decoration: none;
-  padding-left: 5vw;
   letter-spacing: 0.6rem;
   font-style: normal;
 }
@@ -26,9 +29,10 @@ nav {
   font-style: normal;
   letter-spacing: 0.2rem;
 }
-
-/* COPY TO OTHER CSS FILES! */
 header {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 500px 1fr;
   position: relative;
   top: 30px;
 }
@@ -39,31 +43,119 @@ header {
   font-size: 100px;
 
 }
-.page-heading-sub {
-  margin-left: 10vw;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 30px;
-  letter-spacing: 0.6rem;
+button {
+  height: 50px;
+  width: 90px;
+  background-color: #00D1B8;
+  border: solid black 1px;
+  border-radius: 100px;
+  box-shadow: 4px 4px 10px #0A2342;
+  align-self: center;
+  justify-self: end;
+  padding-top: 5px;
+  margin-right: 12vw;
+  font-size: 15px;
 }
+.button {
+  color: #0A2342;
+  text-decoration: none;
+
+}
+
+
+
+
+
+.btn {
+  border-radius: 4px;
+  border: 2px solid #009CD0;
+  color: #009CD0;
+  display: inline-block;
+  margin: 0 .25em;
+  overflow: hidden;
+  padding: 24px 60px 24px 16px;
+  position: relative;
+  text-decoration: none;
+  line-height: 1;
+}
+.btn .btn-content {
+  font-size: 1em;
+  line-height: 1.2;
+  padding: 0 26px;
+  position: relative;
+  right: 0;
+  transition: right 300ms ease;
+  display: block;
+  text-align: left;
+}
+.btn .icon {
+  border-left: 1px solid #009CD0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 50%;
+  transition: all 300ms ease;
+  transform: translateY(-50%);
+  width: 58px;
+  height: 70%;
+}
+.btn .icon i {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #009CD0;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+.btn:hover .btn-content {
+  right: 100%;
+}
+.btn:hover .icon {
+  border-left: 0;
+  font-size: 1.8em;
+  width: 100%;
+}
+.btn:hover:after {
+  opacity: .2;
+}
+.btn.btn-alt-color {
+  border-color: salmon;
+  color: salmon;
+}
+.btn.btn-alt-color .icon {
+  border-left-color: salmon;
+}
+.btn.btn-alt-color:after {
+  background-color: salmon;
+}
+
+
+
+
 
 
 main {
   margin: 3vw 50vw 2vw 10vw;
   line-height: 20px;
 }
-/* main {
-  margin: 3vw 5vw 2vw 5vw;
-  line-height: 20px;
-} */
 p {
 
 }
-.contact-link {
-  text-decoration: none;
-}
 .last-p {
+  padding-top: 20px;
+  font-size: 0.8rem;
   font-style: italic;
+}
+.link {
+  text-decoration: none;
 }
 footer {
   margin: 0vw 4vw 2vw 4vw;
@@ -135,28 +227,17 @@ main {
 }
 
 @media screen and (max-width: 810px) {
-
-.page-heading-sub {
-  letter-spacing: 0.2rem;
-}
-main {
-  margin: 10vw;
-  text-align: justify;
+  main {
+    margin: 10vw;
+    text-align: justify;
 }
 }
-
 @media screen and (max-width: 660px) {
-
-.page-heading-sub {
-  font-size: 20px;
-  letter-spacing: 0.2rem;
-  margin-left: 5vw;
-}
-footer {
-  margin: 0vw 4vw 2vw 4vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  footer {
+    margin: 0vw 4vw 2vw 4vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .page-heading {
   font-size: 80px;
@@ -171,13 +252,11 @@ footer {
     grid-column: 2/3;
     font-size: 0.6rem;
     letter-spacing: 0.1rem;
-
   }
   .nav-item2 {
     grid-column: 3/4;
     font-size: 0.6rem;
     letter-spacing: 0.1rem;
-
   }
   .nav-item3 {
     grid-column: 4/5;
@@ -186,7 +265,6 @@ footer {
 }
 }
 @media screen and (max-width: 550px) {
-
   .page-heading {
     font-size: 60px;
   }

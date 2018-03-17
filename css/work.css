@@ -8,15 +8,17 @@ nav {
   color: white;
   font-weight: lighter;
   display: grid;
-  grid-template-columns: 1fr 3fr 0.6fr 0.6fr 0.6fr;
+  grid-template-columns: 250px 3fr 0.6fr 0.6fr 0.6fr;
   align-items: center;
-  padding-right: 2vw;
-  
+  grid-template-rows: 100px;
+
+}
+.logo {
+  height: 100px;
 }
 .name {
   color: white;
   text-decoration: none;
-  padding-left: 5vw;
   letter-spacing: 0.6rem;
   font-style: normal;
 }
@@ -45,15 +47,16 @@ header {
   font-size: 30px;
   letter-spacing: 0.6rem;
 }
-.project {
+.header-box {
   padding: 0 10px 0 10px;
   margin: 55px auto 0 auto;
   width: 90%;
   border: solid grey 5px;
   border-radius: 20px;
+  background-color: #EAECEE;
 }
 .heading {
-  margin: 15;
+  margin: 15px;
   text-align: center;
   font-size: 2rem;
 }
@@ -75,11 +78,23 @@ header {
   border-radius: 10px;
   box-shadow: 8px 8px 10px #7C7C7C, -8px 8px 10px #7C7C7C;
 }
-.footer {
+.footer-box {
   text-align: center;
+  padding: 0 10px 0 10px;
+  margin: 55px auto 0 auto;
+  width: 90%;
+  border: solid grey 5px;
+  border-radius: 20px;
+  background-color: #808B96;
+  color: #F2F4F4;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+  color:
 }
 .divider {
-  height: 200px;
+  height: 50px;
 }
 
 @media screen and (max-width: 950px) {
@@ -113,7 +128,7 @@ header {
     grid-column: 4/5;
     font-size: 0.8rem;
 }
-  .project {
+  .header-box {
     grid-template-rows: 30px 40px;
     grid-template-columns: 1fr;
   }

@@ -12,16 +12,16 @@ nav {
   color: white;
   font-weight: lighter;
   display: grid;
-  grid-template-columns: 250px 3fr 0.6fr 0.6fr 0.6fr;
+  grid-template-columns: 300px 3fr 0.6fr 0.6fr 0.8fr;
   align-items: center;
-  grid-template-rows: 100px;
+  grid-template-rows: 150px;
   position: fixed;
   top: 0;
   width: 100%;
 
 }
 .logo {
-  height: 100px;
+  height: 149px;
 }
 .name {
   color: white;
@@ -39,7 +39,7 @@ nav {
   position: absolute;
   width: 100vw;
   z-index: -100;
-  border-bottom: solid black 30px;
+  border-bottom: solid black 1vw;
 }
 .container {
   width: 100vh;
@@ -103,7 +103,16 @@ grid-row: 2;
      width: 100%;
      height: 30px;
  }
+@media screen and (max-width: 1400px) {
+  nav {
+    grid-template-rows: 100px;
+    grid-template-columns: 220px 3fr 0.6fr 0.6fr 0.8fr;
 
+  }
+  .logo {
+    height: 100px;
+  }
+}
 @media screen and (max-width: 1080px) {
   .text {
     padding-top: 20vw;

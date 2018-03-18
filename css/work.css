@@ -9,7 +9,7 @@ nav {
   color: white;
   font-weight: lighter;
   display: grid;
-  grid-template-columns: 250px 3fr 0.6fr 0.6fr 0.6fr;
+  grid-template-columns: 220px 3fr 0.6fr 0.6fr 0.8fr;
   align-items: center;
   grid-template-rows: 100px;
   width: 100%;
@@ -168,14 +168,14 @@ a {
 .grow1 {
  transition: all 0.5s ease-out;
 }
-.grow1:hover {
+.grow1:active {
  transform: scale(1.8) translate(80px, 0px);
 }
 
 .grow2 {
  transition: all 0.5s ease-out;
 }
-.grow2:hover {
+.grow2:active {
  transform: scale(1.8) translate(-80px, 0px);
 }
 

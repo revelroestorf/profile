@@ -68,7 +68,7 @@ main {
   padding: 0 10px 0 10px;
   margin: 0 auto 0 auto;
   width: 90%;
-  border: solid grey 5px;
+  border: solid #3F403F 1px;
   border-radius: 20px;
   background-color: #EAECEE;
 }
@@ -92,7 +92,7 @@ main {
   width: 100px;
   height: 100px;
   max-height: 300px;
-  border: solid 1px black;
+  border: solid 3px black;
   border-radius: 10px;
   box-shadow: 8px 8px 10px #7C7C7C;
 }
@@ -104,7 +104,7 @@ main {
   padding: 0 10px 0 10px;
   margin: 55px auto 80px auto;
   width: 90%;
-  border: solid grey 5px;
+  border: solid #3F403F 1px;
   border-radius: 20px;
   background-color: #808B96;
   color: #F2F4F4;
@@ -120,7 +120,7 @@ a {
  transition: all 0.2s ease-out;
 }
 .grow1:hover {
-  border: solid white 1px;
+  border: solid white;
 }
 .grow1:active {
  transform: scale(4.8) translate(60px, 0px);
@@ -133,7 +133,7 @@ a {
  transition: all 0.2s ease-out;
 }
 .grow2:hover {
-  border: solid white 1px;
+  border: solid white;
 }
 .grow2:active {
  transform: scale(4.8) translate(30px, 0px);
@@ -145,11 +145,10 @@ a {
  transition: all 0.2s ease-out;
 }
 .grow3:hover {
-  border: solid white 1px;
+  border: solid white;
 }
 .grow3:active {
  transform: scale(4.8) translate(-30px, 0px);
- border: solid white 1px;
  box-shadow: 0 0;
  padding: 0;
 }
@@ -158,7 +157,7 @@ a {
  transition: all 0.2s ease-out;
 }
 .grow4:hover {
-  border: solid white 1px;
+  border: solid white;
 }
 .grow4:active {
  transform: scale(4.8) translate(-60px, 0px);

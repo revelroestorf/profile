@@ -15,6 +15,7 @@ nav {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 100;
 
 }
 .logo {
@@ -35,7 +36,9 @@ nav {
 header {
   position: relative;
   top: 160px;
-  margin-bottom: 200px;
+}
+.spacer {
+  height: 200px;
 }
 .page-heading {
   position: relative;
@@ -45,11 +48,21 @@ header {
 
 }
 .page-heading-sub {
-  margin-left: 10vw;
+  display: inline-block;
+  margin-left: 4vw;
   font-style: normal;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 15px;
   letter-spacing: 0.6rem;
+}
+main {
+  position: relative;
+  top: 7vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
 }
 .header-box {
   padding: 0 10px 0 10px;
@@ -62,9 +75,10 @@ header {
 .heading {
   margin: 15px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 20px;
 }
 .description-summary {
+  font-size: 15px;
   text-align: center;
 }
 .screenshots {
@@ -74,16 +88,18 @@ header {
   justify-content: space-around;
 }
 .images {
-  width: 40vw;
-  max-width: 300px;
-  height: 40vw;
+  padding: 3px;
+  width: 100px;
+  height: 100px;
   max-height: 300px;
-  border: solid 5px #ddd;
+  border: solid 1px black;
   border-radius: 10px;
-  box-shadow: 8px 8px 10px #7C7C7C, -8px 8px 10px #7C7C7C;
+  box-shadow: 8px 8px 10px #7C7C7C;
 }
 
 .footer-box {
+  font-size: 12px;
+  font-weight: lighter;
   text-align: center;
   padding: 0 10px 0 10px;
   margin: 55px auto 80px auto;
@@ -98,89 +114,71 @@ a {
   text-decoration: none;
   color:
 }
-.divider {
-  height: 30px;
-}
 
-
-
-
-@-webkit-keyframes wobble {
- 16.65% {
-   transform: translateY(8px);
- }
- 33.3% {
-   transform: translateY(-6px);
- }
- 49.95% {
-   transform: translateY(4px);
- }
- 66.6% {
-   transform: translateY(-2px);
- }
- 83.25% {
-   transform: translateY(1px);
- }
- 100% {
-   transform: translateY(0);
- }
-}
-@keyframes wobble {
- 16.65% {
-   transform: translateY(8px);
- }
- 33.3% {
-   transform: translateY(-6px);
- }
- 49.95% {
-   transform: translateY(4px);
- }
- 66.6% {
-   transform: translateY(-2px);
- }
- 83.25% {
-   transform: translateY(1px);
- }
- 100% {
-   transform: translateY(0);
- }
-}
-
-.wobble {
- display: inline-block;
- transform: translateZ(0);
- box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.wobble:hover {
- animation-name: wobble;
- animation-duration: 1s;
- animation-timing-function: ease-in-out;
- animation-iteration-count: 1;
-}
-
-.float {
- transition: all .3s ease-out;
-}
-.float:hover {
- transform: translate(0px,-10px);
-}
 
 .grow1 {
- transition: all 0.5s ease-out;
+ transition: all 0.2s ease-out;
+}
+.grow1:hover {
+  border: solid white 1px;
 }
 .grow1:active {
- transform: scale(1.8) translate(80px, 0px);
+ transform: scale(4.8) translate(60px, 0px);
+ border: solid white 1px;
+ box-shadow: 0 0;
+ padding: 0;
 }
 
 .grow2 {
- transition: all 0.5s ease-out;
+ transition: all 0.2s ease-out;
+}
+.grow2:hover {
+  border: solid white 1px;
 }
 .grow2:active {
- transform: scale(1.8) translate(-80px, 0px);
+ transform: scale(4.8) translate(30px, 0px);
+ border: solid white 1px;
+ box-shadow: 0 0;
+ padding: 0;
+}
+.grow3 {
+ transition: all 0.2s ease-out;
+}
+.grow3:hover {
+  border: solid white 1px;
+}
+.grow3:active {
+ transform: scale(4.8) translate(-30px, 0px);
+ border: solid white 1px;
+ box-shadow: 0 0;
+ padding: 0;
+}
+
+.grow4 {
+ transition: all 0.2s ease-out;
+}
+.grow4:hover {
+  border: solid white 1px;
+}
+.grow4:active {
+ transform: scale(4.8) translate(-60px, 0px);
+ border: solid white 1px;
+ box-shadow: 0 0;
+ padding: 0;
 }
 
 
-
+.websiteFrame {
+     position: fixed;
+     z-index: 990;
+     background-color: black;
+}
+#websiteFrameBottom {
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 30px;
+ }
 
 
 @media screen and (max-width: 950px) {
@@ -202,21 +200,18 @@ a {
   .nav-item1 {
     grid-column: 2/3;
     font-size: 0.8rem;
-
   }
   .nav-item2 {
     grid-column: 3/4;
     font-size: 0.8rem;
-
   }
   .nav-item3 {
     grid-column: 4/5;
     font-size: 0.8rem;
-}
-.page-heading-sub {
-  font-size: 20px;
-  letter-spacing: 0.2rem;
-}
+  }
+  .page-heading-sub {
+    letter-spacing: 0.2rem;
+  }
   .header-box {
     grid-template-rows: 30px 40px;
     grid-template-columns: 1fr;
@@ -224,34 +219,30 @@ a {
   .description-summary {
     grid-row: 2;
   }
-  .screenshots {
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  .images {
-    width: 60vw;
-    height: 60vw;
 }
-}
-@media screen and (max-width: 688px) {
-  .page-heading-sub {
-    margin-left: 5vw;
-    font-size: 20px;
-    letter-spacing: 0.1rem;
+@media screen and (max-width: 939px) {
+  header {
+    top: 120px;
   }
-  .grow1:hover {
-   transform: scale(1.6) translate(0px, 0px);
+  .spacer {
+    height: 120px;
   }
-  .grow2:hover {
-   transform: scale(1.6) translate(0px, 0px);
+  .grow1:active {
+   transform: scale(4.8) translate(22px, 0px);
+  }
+  .grow2:active {
+   transform: scale(4.8) translate(-22px, 0px);
+  }
+  .grow3:active {
+   transform: scale(4.8) translate(22px, 0px);
+  }
+  .grow4:active {
+   transform: scale(4.8) translate(-22px, 0px);
   }
 }
 @media screen and (max-width: 600px) {
   .page-heading-sub {
     line-height: 60px;
-    margin-left: 40vw;
-    font-size: 18px;
     letter-spacing: 0.1rem;
 }
 }
@@ -279,8 +270,58 @@ a {
   font-size: 30px;
 }
 }
-@media screen and (max-width: 420px) {
-  /* .page-heading-sub {
-    font-size: 18px;
-    letter-spacing: 0.0rem; */
+@media screen and (max-width: 520px) {
+  header {
+    position: relative;
+    top: 110px;
   }
+  .spacer {
+    height: 100px;
+  }
+  .heading {
+    margin: 8px;
+    font-size: 18px;
+  }
+  .description-summary {
+    font-size: 13px;
+  }
+  .screenshots {
+    margin: 20px 5vw 20px 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer-box {
+    padding: 0 10px 0 10px;
+    margin: 0 auto 50px auto;
+  }
+  .grow1:active {
+   transform: scale(3.8) translate(26px, 0px);
+  }
+  .grow2:active {
+   transform: scale(3.8) translate(-26px, 0px);
+  }
+  .grow3:active {
+   transform: scale(3.8) translate(26px, -40px);
+  }
+  .grow4:active {
+   transform: scale(3.8) translate(-26px, -40px);
+  }
+}
+@media screen and (max-width: 420px) {
+  .page-heading {
+    font-size: 25px;
+  }
+  .grow1:active {
+   transform: scale(3) translate(25px, 0px);
+  }
+  .grow2:active {
+   transform: scale(3) translate(-25px, 0px);
+  }
+  .grow3:active {
+   transform: scale(3) translate(25px, -40px);
+  }
+  .grow4:active {
+   transform: scale(3) translate(-25px, -40px);
+  }
+}

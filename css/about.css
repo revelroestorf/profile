@@ -12,28 +12,31 @@ nav {
   color: white;
   font-weight: lighter;
   display: grid;
-  grid-template-columns: 160px 3fr 0.4fr 0.4fr 0.5fr;
-  align-items: center;
+  grid-template-columns: 100px 3fr 0.4fr 0.4fr 0.5fr;
   grid-template-rows: 100px;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 .blueline {
-  margin-left: 102px;
-  position: relative;
-  top: 79px;
-  border: solid #00C6B3 2px;
+  margin-left: 100px;
+  width: 100%;
+  position: fixed;
+  top: 94px;
+  border: solid #00C6B3 3px;
+  z-index: 101;
 }
 .logo {
-  height: 102px;
+  height: 100px;
 }
 .name {
   color: white;
   text-decoration: none;
   letter-spacing: 0.6rem;
   font-style: normal;
-  padding-left: 10px;
+  padding-left: 70px;
+  align-self: center;
 }
 .nav-item {
   font-size: 11px;
@@ -41,19 +44,13 @@ nav {
   text-decoration: none;
   font-style: normal;
   letter-spacing: 0.2rem;
+  align-self: center;
 }
-
 main {
   position: relative;
   top: 130px;
   left: 80px;
   width: 40vw;
-  /* margin: 100px 50vw 50px 80px; */
-  /* position: relative; */
-  /* top: 13vw; */
-}
-header {
-
 }
 .page-heading-arrow {
   font-weight: bold;
@@ -64,13 +61,8 @@ header {
   font-style: normal;
   font-size: 30px;
 }
-.button {
-  position: absolute;
-  top: 0;
-  right:0;
-}
 .text {
-  margin-top: 100px;
+  margin-top: 5vw;
   line-height: 1.5rem;
   text-align: justify;
 }
@@ -92,7 +84,11 @@ footer {
   position: fixed;
   bottom: 0;
   background-color: black;
-
+}
+.button {
+  position: absolute;
+  bottom: 13vw;
+  right: 5vw;
 }
 .img {
   height: 8vw;
@@ -179,33 +175,30 @@ footer {
 left: -6px;
 }
 
-
-
-
-
-@media screen and (max-width: 1300px) {
-
-main {
-  /* margin: 6vw 25vw 8vw 8vw; */
-}
+@media screen and (max-width: 1280px) {
+  main {
+    position: relative;
+    top: 130px;
+    left: 80px;
+    width: 60vw;
+  }
 }
 
 @media screen and (max-width: 950px) {
-
   nav {
-    grid-template-rows: 40px 40px;
+    grid-template-rows: 50px 50px;
     grid-template-columns: 120px 1fr 1fr 1fr;
-    justify-items: center;
-  }
-  .logo {
-    height: 120px;
-    width: 120px;
+
   }
   .name {
     font-size: 1rem;
     padding-left: 0px;
     letter-spacing: 0.6rem;
     grid-column: 2/5;
+    justify-self: center;
+  }
+  .nav-item {
+    justify-self: center;
   }
   .nav-item1 {
     grid-column: 2/3;
@@ -221,16 +214,26 @@ main {
     grid-column: 4/5;
     font-size: 0.8rem;
 }
-
-main {
-  margin: 10vw 25vw 8vw 10vw;
 }
+@media screen and (max-width: 750px) {
+  .button {
+    position: absolute;
+    bottom: 15vw;
+    right: 30px;
+  }
 }
-
 @media screen and (max-width: 720px) {
+  main {
+    top: 130px;
+    left: 60px;
+    width: 70vw;
+  }
+  .text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
 .btn {
   padding: 10px 0px 10px 0px;
-  margin: 45px 5vw 0 5vw;
 }
 .btn .btn-content {
   right: 15px;
@@ -244,12 +247,6 @@ main {
 .btn:hover .icon i {
 left: -37px;
 }
-}
-@media screen and (max-width: 660px) {
-  .btn {
-    padding: 10px 0px 10px 0px;
-    margin: 45px 5vw 0 5vw;
-  }
 }
 @media screen and (max-width: 550px) {
   .name {
@@ -271,13 +268,8 @@ left: -37px;
     font-size: 0.6rem;
     letter-spacing: 0.1rem;
   }
-  .page-heading {
-    top: 20px;
-    font-size: 45px;
-  }
   .btn {
     padding: 6px 3px 6px 3px;
-    margin: 33px 8vw 0 5vw;
   }
   .btn .btn-content {
     padding: 0 20px;
@@ -292,5 +284,15 @@ left: -37px;
   }
   .btn:hover .icon i {
   left: -36px;
+  }
+}
+@media screen and (max-width: 510px) {
+  main {
+    top: 130px;
+    left: 60px;
+  }
+  .text {
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
 }

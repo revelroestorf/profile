@@ -12,8 +12,7 @@ nav {
   color: white;
   font-weight: lighter;
   display: grid;
-  grid-template-columns: 160px 3fr 0.4fr 0.4fr 0.5fr;
-  align-items: center;
+  grid-template-columns: 100px 3fr 0.4fr 0.4fr 0.5fr;
   grid-template-rows: 100px;
   position: fixed;
   top: 0;
@@ -21,21 +20,23 @@ nav {
   z-index: 100;
 }
 .blueline {
-  margin-left: 102px;
-  position: relative;
-  top: 97px;
-  border: solid #00C6B3 2px;
+  margin-left: 100px;
+  width: 100%;
+  position: fixed;
+  top: 94px;
+  border: solid #00C6B3 3px;
   z-index: 101;
 }
 .logo {
-  height: 102px;
+  height: 100px;
 }
 .name {
   color: white;
   text-decoration: none;
   letter-spacing: 0.6rem;
   font-style: normal;
-  padding-left: 10px;
+  padding-left: 70px;
+  align-self: center;
 }
 .nav-item {
   font-size: 11px;
@@ -43,9 +44,8 @@ nav {
   text-decoration: none;
   font-style: normal;
   letter-spacing: 0.2rem;
+  align-self: center;
 }
-
-
 header {
   margin-left: 80px;
   position: relative;
@@ -70,12 +70,9 @@ header {
   font-size: 15px;
   letter-spacing: 0.6rem;
 }
-.spacer {
-  height: 200px;
-}
 main {
   position: relative;
-  top: 7vw;
+  top: 300px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -183,8 +180,6 @@ a {
  box-shadow: 0 0;
  padding: 0;
 }
-
-
 .websiteFrame {
      position: fixed;
      z-index: 990;
@@ -197,22 +192,20 @@ a {
      height: 15px;
  }
 
-
 @media screen and (max-width: 950px) {
   nav {
-    grid-template-rows: 40px 40px;
+    grid-template-rows: 50px 50px;
     grid-template-columns: 120px 1fr 1fr 1fr;
-    justify-items: center;
-  }
-  .logo {
-    height: 120px;
-    width: 120px;
   }
   .name {
     font-size: 1rem;
     padding-left: 0px;
     letter-spacing: 0.6rem;
     grid-column: 2/5;
+    justify-self: center;
+  }
+  .nav-item {
+    justify-self: center;
   }
   .nav-item1 {
     grid-column: 2/3;
@@ -226,9 +219,6 @@ a {
     grid-column: 4/5;
     font-size: 0.8rem;
   }
-  .page-heading-sub {
-    letter-spacing: 0.2rem;
-  }
   .header-box {
     grid-template-rows: 30px 40px;
     grid-template-columns: 1fr;
@@ -237,13 +227,13 @@ a {
     grid-row: 2;
   }
 }
+@media screen and (max-width: 929px) {
+  main {
+    position: relative;
+    top: 200px;
+  }
+}
 @media screen and (max-width: 939px) {
-  header {
-    top: 120px;
-  }
-  .spacer {
-    height: 120px;
-  }
   .grow1:active {
    transform: scale(4.8) translate(22px, 0px);
   }
@@ -256,11 +246,6 @@ a {
   .grow4:active {
    transform: scale(4.8) translate(-22px, 0px);
   }
-}
-@media screen and (max-width: 600px) {
-  .page-heading-sub {
-    line-height: 60px;
-    letter-spacing: 0.1rem;
 }
 }
 @media screen and (max-width: 550px) {
@@ -283,18 +268,8 @@ a {
     font-size: 0.6rem;
     letter-spacing: 0.1rem;
 }
-.page-heading {
-  font-size: 30px;
-}
 }
 @media screen and (max-width: 520px) {
-  header {
-    position: relative;
-    top: 110px;
-  }
-  .spacer {
-    height: 100px;
-  }
   .heading {
     margin: 8px;
     font-size: 18px;
@@ -325,10 +300,18 @@ a {
    transform: scale(3.8) translate(-26px, -40px);
   }
 }
-@media screen and (max-width: 420px) {
-  .page-heading {
-    font-size: 25px;
+@media screen and (max-width: 480px) {
+  .page-heading-arrow {
+    font-size: 22px;
   }
+  .page-heading {
+    font-size: 22px;
+  }
+  .page-heading-sub {
+    letter-spacing: 0.3rem;
+  }
+}
+@media screen and (max-width: 420px) {
   .grow1:active {
    transform: scale(3) translate(25px, 0px);
   }

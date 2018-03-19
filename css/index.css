@@ -4,12 +4,15 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0px;
+  background: #cfcfcf;
   /* overflow: hidden; */
 }
 .background-image {
   position: absolute;
+  bottom: 0;
   width: 100vw;
   z-index: -100;
+  border-bottom: solid white 20px;
   /* padding-bottom: 3px;
   border-bottom: solid black 1vw; */
 }
@@ -18,28 +21,31 @@ nav {
   color: white;
   font-weight: lighter;
   display: grid;
-  grid-template-columns: 160px 3fr 0.4fr 0.4fr 0.5fr;
-  align-items: center;
+  grid-template-columns: 100px 3fr 0.4fr 0.4fr 0.5fr;
   grid-template-rows: 100px;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 .blueline {
-  margin-left: 102px;
-  position: relative;
-  top: 97px;
-  border: solid #00C6B3 2px;
+  margin-left: 100px;
+  width: 100%;
+  position: fixed;
+  top: 94px;
+  border: solid #00C6B3 3px;
+  z-index: 101;
 }
 .logo {
-  height: 102px;
+  height: 100px;
 }
 .name {
   color: white;
   text-decoration: none;
   letter-spacing: 0.6rem;
   font-style: normal;
-  padding-left: 10px;
+  padding-left: 70px;
+  align-self: center;
 }
 .nav-item {
   font-size: 11px;
@@ -47,13 +53,15 @@ nav {
   text-decoration: none;
   font-style: normal;
   letter-spacing: 0.2rem;
+  align-self: center;
 }
-
 .text {
-  padding-top: 25vw;
-  padding-left: 4vw;
+  width:100%;
+  position: absolute;
+  bottom: 100px;
+  left: 80px;
 }
-.code-symbol {
+.page-heading-arrow {
   font-size: 40px;
   color: white;
 }
@@ -61,8 +69,7 @@ nav {
   font-style: normal;
   font-size: 40px;
   color: white;
-  /* text-shadow: 0px 0px 50px black; */
-}
+  text-shadow: 2px 2px 5px black;
 }
 i {
   font-style: normal;
@@ -75,7 +82,7 @@ p {
   line-height: 2rem;
   display: grid;
   grid-template-rows: 30px 30px;
-  grid-template-columns: 410px 1fr;
+  grid-template-columns: 405px 1fr;
 }
 .p1 {
   font-style: normal;
@@ -91,150 +98,109 @@ grid-row: 2;
 .process {
   font-style: normal;
   padding-left: 20vw;
-  font-size: 18px;
-  padding-top: 8vw;
+  font-size: 19px;
+  padding-top: 7vw;
   color: white;
+  text-shadow: 1px 1px 5px black;
 }
 .care {
   font-style: normal;
-
   padding-right: 4vw;
-
 }
 .empathise {
   font-style: normal;
-
   padding-right: 4vw;
-
 }
 .define {
   font-style: normal;
-
   padding-right: 4vw;
-
 }
 .solve {
   font-style: normal;
-
   padding-right: 4vw;
+}
 
-}
-.websiteFrame {
-     position: fixed;
-     z-index: 990;
-     background-color: black;
-}
-#websiteFrameBottom {
-     bottom: 0;
-     left: 0;
-     width: 100%;
-     height: 30px;
- }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1110px) {
   .text {
-    padding-top: 20vw;
-    padding-left: 4vw;
+    bottom: 390px;
   }
   p {
-    padding-left: 4vw;
+    padding-left: 37px;
   }
   .process {
-    padding-left: 8vw;
+    padding-left: 37px;
   }
 }
-
 @media screen and (max-width: 950px) {
 
   nav {
-    grid-template-rows: 40px 40px;
+    grid-template-rows: 50px 50px;
     grid-template-columns: 120px 1fr 1fr 1fr;
-    justify-items: center;
   }
   .logo {
-    height: 120px;
-    width: 120px;
   }
   .name {
     font-size: 1rem;
     padding-left: 0px;
     letter-spacing: 0.6rem;
     grid-column: 2/5;
+    justify-self: center;
+  }
+  .nav-item {
+    justify-self: center;
   }
   .nav-item1 {
     grid-column: 2/3;
     font-size: 0.8rem;
-
   }
   .nav-item2 {
     grid-column: 3/4;
     font-size: 0.8rem;
-
   }
   .nav-item3 {
     grid-column: 4/5;
     font-size: 0.8rem;
-
+  }
+}
+@media screen and (max-width: 810px) {
+  .text {
+    font-size: 30px;
   }
   .h1 {
     font-size: 30px;
+    font-style: normal;
   }
   p {
-    padding-left: 4vw;
-    font-size: 15px;
-    grid-template-columns: 288px 1fr;
-
+    font-size: 16px;
+    grid-template-columns: 324px 1fr;
   }
   .process {
-    padding-left: 8vw;
-    font-size: 15px;
+    font-size: 16px;
   }
 }
-
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 690px) {
   .text {
-    padding-top: 25vw;
-    padding-left: 4vw;
+    bottom: 350px;
+    left: 80px;
+  }
+  .page-heading-arrow {
+    font-size: 25px;
   }
   .h1 {
-    font-size: 20px;
+    font-size: 25px;
   }
   p {
-    font-size: 13px;
-    padding-left: 10vw;
+    padding-left: 22px;
     grid-template-rows: 30px 30px 30px;
-    padding-top: 0vw;
-
   }
   .p3 {
-    grid-row: 3;
+    font-style: normal;
+  grid-row: 3;
   }
   .process {
-    font-size: 13px;
-    padding-left: 20vw;
-    padding-top: 3vw;
+    padding-left: 22px;
   }
 }
-@media screen and (max-width: 580px) {
-  .text {
-    padding-top: 22vw;
-    padding-left: 4vw;
-  }
-  .h1 {
-    font-size: 17px;
-  }
-  p {
-    font-size: 13px;
-    padding-left: 10vw;
-    grid-template-rows: 17px 17px 17px;
-    padding-top: 0vw;
-  }
-  .process {
-    font-size: 11px;
-    padding-left: 15vw;
-    padding-top: 2vw;
-  }
-}
-
 @media screen and (max-width: 550px) {
   .name {
     font-size: 0.9rem;
@@ -244,30 +210,106 @@ grid-row: 2;
     grid-column: 2/3;
     font-size: 0.6rem;
     letter-spacing: 0.1rem;
-
   }
   .nav-item2 {
     grid-column: 3/4;
     font-size: 0.6rem;
     letter-spacing: 0.1rem;
-
   }
   .nav-item3 {
     grid-column: 4/5;
     font-size: 0.6rem;
     letter-spacing: 0.1rem;
 }
-}
-@media screen and (max-width: 430px) {
+  .text {
+    bottom: 180px;
+    left: 30px;
+  }
+  .page-heading-arrow {
+    font-size: 21px;
+  }
+  .h1 {
+    font-size: 21px;
+  }
   p {
-    font-size: 13px;
-    padding-left: 3vw;
-    grid-template-rows: 17px 17px 17px;
-    padding-top: 0vw;
+    font-size: 14px;
+    padding-top: 150px;
+    padding-left: 22px;
+    grid-template-rows: 30px 30px 30px;
+  }
+  .p3 {
+    font-style: normal;
+  grid-row: 3;
   }
   .process {
-    font-size: 11px;
-    padding-left: 9vw;
-    padding-top: 2vw;
+    padding-top: 180px;
+    font-size: 14px;
+    padding-left: 22px;
   }
 }
+
+/*
+.text {
+  width:100%;
+  position: absolute;
+  bottom: 400px;
+  left: 80px;
+}
+.page-heading-arrow {
+  font-size: 40px;
+  color: white;
+}
+.h1 {
+  font-style: normal;
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+i {
+  font-style: normal;
+}
+p {
+  font-style: normal;
+  padding-left: 10vw;
+  font-size: 20px;
+  padding-top: 5vw;
+  line-height: 2rem;
+  display: grid;
+  grid-template-rows: 30px 30px;
+  grid-template-columns: 405px 1fr;
+}
+.p1 {
+  font-style: normal;
+}
+.p2 {
+  font-style: normal;
+grid-row: 2;
+}
+.p3 {
+  font-style: normal;
+grid-row: 2;
+}
+.process {
+  font-style: normal;
+  padding-left: 20vw;
+  font-size: 19px;
+  padding-top: 7vw;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+.care {
+  font-style: normal;
+  padding-right: 4vw;
+}
+.empathise {
+  font-style: normal;
+  padding-right: 4vw;
+}
+.define {
+  font-style: normal;
+  padding-right: 4vw;
+}
+.solve {
+  font-style: normal;
+  padding-right: 4vw;
+} */

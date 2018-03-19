@@ -1,94 +1,121 @@
-
 body {
   font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
   font-style: normal;
   height: 100vh;
   width: 100vw;
   margin: 0px;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+.background-image {
+  position: absolute;
+  width: 100vw;
+  z-index: -100;
+  /* padding-bottom: 3px;
+  border-bottom: solid black 1vw; */
 }
 nav {
   background-color: black;
   color: white;
   font-weight: lighter;
   display: grid;
-  grid-template-columns: 300px 3fr 0.6fr 0.6fr 0.8fr;
+  grid-template-columns: 160px 3fr 0.4fr 0.4fr 0.5fr;
   align-items: center;
-  grid-template-rows: 150px;
+  grid-template-rows: 100px;
   position: fixed;
   top: 0;
   width: 100%;
-
+}
+.blueline {
+  margin-left: 102px;
+  position: relative;
+  top: 97px;
+  border: solid #00C6B3 2px;
 }
 .logo {
-  height: 149px;
+  height: 102px;
 }
 .name {
   color: white;
   text-decoration: none;
   letter-spacing: 0.6rem;
   font-style: normal;
+  padding-left: 10px;
 }
 .nav-item {
+  font-size: 11px;
   color: white;
   text-decoration: none;
   font-style: normal;
   letter-spacing: 0.2rem;
 }
-.background-image {
-  position: absolute;
-  width: 100vw;
-  z-index: -100;
-  border-bottom: solid black 1vw;
-}
-.container {
-  width: 100vh;
-  height: 100%;
-}
+
 .text {
   padding-top: 25vw;
   padding-left: 4vw;
 }
-.h1 {
-  font-style: italic;
+.code-symbol {
   font-size: 40px;
+  color: white;
+}
+.h1 {
+  font-style: normal;
+  font-size: 40px;
+  color: white;
+  /* text-shadow: 0px 0px 50px black; */
+}
 }
 i {
   font-style: normal;
 }
 p {
+  font-style: normal;
   padding-left: 10vw;
   font-size: 20px;
   padding-top: 5vw;
   line-height: 2rem;
   display: grid;
   grid-template-rows: 30px 30px;
-  grid-template-columns: 383px 1fr;
+  grid-template-columns: 410px 1fr;
+}
+.p1 {
+  font-style: normal;
 }
 .p2 {
+  font-style: normal;
 grid-row: 2;
 }
 .p3 {
+  font-style: normal;
 grid-row: 2;
 }
 .process {
+  font-style: normal;
   padding-left: 20vw;
-  font-size: 22px;
+  font-size: 18px;
   padding-top: 8vw;
+  color: white;
 }
 .care {
+  font-style: normal;
+
   padding-right: 4vw;
 
 }
 .empathise {
+  font-style: normal;
+
   padding-right: 4vw;
 
 }
 .define {
+  font-style: normal;
+
   padding-right: 4vw;
 
 }
 .solve {
+  font-style: normal;
+
   padding-right: 4vw;
 
 }
@@ -103,16 +130,6 @@ grid-row: 2;
      width: 100%;
      height: 30px;
  }
-@media screen and (max-width: 1400px) {
-  nav {
-    grid-template-rows: 100px;
-    grid-template-columns: 220px 3fr 0.6fr 0.6fr 0.8fr;
-
-  }
-  .logo {
-    height: 100px;
-  }
-}
 @media screen and (max-width: 1080px) {
   .text {
     padding-top: 20vw;

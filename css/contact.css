@@ -3,49 +3,61 @@ body {
   font-style: normal;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
-  margin: 0;
-  background: #b9bbba;
-
+  margin: 0px;
+  background: #cfcfcf;
+  /* overflow: hidden; */
 }
 nav {
   background-color: black;
   color: white;
   font-weight: lighter;
   display: grid;
-  grid-template-columns: 220px 3fr 0.6fr 0.6fr 0.8fr;
+  grid-template-columns: 160px 3fr 0.4fr 0.4fr 0.5fr;
   align-items: center;
   grid-template-rows: 100px;
-
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.blueline {
+  margin-left: 102px;
+  position: relative;
+  top: 97px;
+  border: solid #00C6B3 2px;
 }
 .logo {
-  height: 100px;
+  height: 102px;
 }
 .name {
   color: white;
   text-decoration: none;
   letter-spacing: 0.6rem;
   font-style: normal;
+  padding-left: 10px;
 }
 .nav-item {
+  font-size: 11px;
   color: white;
   text-decoration: none;
   font-style: normal;
   letter-spacing: 0.2rem;
 }
+
+
 header {
+  margin-left: 4vw;
   position: relative;
-  top: 30px;
+  top:160px;
+}
+.page-heading-arrow {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
 }
 .page-heading {
   position: relative;
-  top: 2vw;
-  margin-left: 4vw;
   font-style: normal;
-  font-size: 80px;
-  color: white;
-  text-shadow: 0px 0px 50px black;
-}
+  font-size: 30px;
 
 }
 .page-heading-sub {
@@ -73,7 +85,7 @@ main div {
 .icon-list {
   border: solid #3F403F 3px;
   border-radius: 10px;
-  background: white;
+  background: #3F403F;
   width: 50vw;
   max-width: 450px;
   margin:auto;
@@ -87,7 +99,7 @@ main div {
 }
 .icon-list a {
   text-decoration: none;
-  color: #3F403F;
+  color: white;
 }
 /* #3F403F */
 
@@ -106,28 +118,31 @@ footer {
 .websiteFrame {
      position: fixed;
      z-index: 990;
-     background-color: black;
+     background-color: white;
 }
 #websiteFrameBottom {
      bottom: 0;
      left: 0;
      width: 100%;
-     height: 30px;
+     height: 15px;
  }
+
+
+
  .grow {
-  -webkit-transition:all 0.5s ease-out;
+  /* -webkit-transition:all 0.5s ease-out;
   -moz-transition:all 0.5s ease-out;
   -ms-transition:all 0.5s ease-out;
-  -o-transition:all 0.5s ease-out;
+  -o-transition:all 0.5s ease-out; */
   transition:all 0.5s ease-out;
  }
 
  .grow:hover {
-  -webkit-transform:scale(1.3);
+  /* -webkit-transform:scale(1.3);
   -moz-transform:scale(1.3);
   -ms-transform:scale(1.3);
   -o-transform:scale(1.3);
-  transform:scale(1.3);
+  transform:scale(1.3); */
   color: #00C6B3;
  }
 /* 00EAD3 */

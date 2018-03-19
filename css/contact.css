@@ -32,17 +32,16 @@ nav {
 .name {
   color: white;
   text-decoration: none;
-  letter-spacing: 0.6rem;
-  font-style: normal;
+  font-size: 13px;
+  letter-spacing: 0.4rem;
   padding-left: 70px;
   align-self: center;
-
 }
 .nav-item {
   font-size: 11px;
+  font-weight: 400;
   color: white;
   text-decoration: none;
-  font-style: normal;
   letter-spacing: 0.2rem;
   align-self: center;
 }
@@ -71,26 +70,27 @@ header {
 .image1 {
   position: absolute;
   top: 100;
-  right: 793px;
+  left: -150px;
   height: 100%;
   z-index: -100;
 }
 .image2 {
   position: absolute;
   top: 100;
-  right: 156px;
+  left: 415px;
   height: 100%;
   z-index: -100;
 }
 .image3{
   position: absolute;
   top: 100;
-  right: 1430px;
+  left: 975px;
   height: 100%;
   z-index: -100;
 }
 .icon-list-container {
   position: relative;
+  top: 45;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -103,7 +103,6 @@ header {
   background: #3F403F;
   height: 87%;
   width: 150px;
-  margin-top: 60px;
 	display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -125,7 +124,7 @@ header {
 footer {
   position: fixed;
   bottom: 80px;
-  right: 60px;
+  right: 230px;
   font-size: 25px;
 }
 .websiteFrame {
@@ -246,9 +245,7 @@ footer {
     grid-template-columns: 120px 1fr 1fr 1fr;
   }
   .name {
-    font-size: 1rem;
     padding-left: 0px;
-    letter-spacing: 0.6rem;
     grid-column: 2/5;
     justify-self: center;
   }
@@ -257,33 +254,25 @@ footer {
   }
   .nav-item1 {
     grid-column: 2/3;
-    font-size: 0.8rem;
 
   }
   .nav-item2 {
     grid-column: 3/4;
-    font-size: 0.8rem;
 
   }
   .nav-item3 {
     grid-column: 4/5;
-    font-size: 0.8rem;
 }
 }
 @media screen and (max-width: 650px) {
   .icon-list {
     width: 90px;
-    margin-top: 60px;
-  	display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
   }
 }
 
 @media screen and (max-width: 550px) {
   .name {
-    font-size: 0.9rem;
+    font-size: 12px;
     letter-spacing: 0.2rem;
   }
   .nav-item1 {
@@ -308,5 +297,9 @@ footer {
   }
   .page-heading {
     font-size: 25px;
+  }
+  footer {
+    font-size: 18px;
+    right: 120px;
   }
 }

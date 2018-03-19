@@ -5,7 +5,6 @@ body {
   width: 100vw;
   margin: 0px;
   background: #cfcfcf;
-  /* overflow: hidden; */
 }
 nav {
   background-color: black;
@@ -76,14 +75,17 @@ main {
   text-shadow: 2px 2px 2px grey;
 }
 footer {
-  width: 100%;
-  margin: 0 auto 15px auto;
+  position: fixed;
+  bottom: 15px;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  position: fixed;
-  bottom: 0;
+  align-items: flex-end;
   background-color: black;
+  border-left: solid black 10px;
+  border-right: solid black 100px;
+
 }
 .button {
   position: absolute;
@@ -93,9 +95,6 @@ footer {
 .img {
   height: 8vw;
   width: 13vw;
-  /* border: 1px solid white; */
-  /* border-radius: 4px; */
-  /* padding: 5px; */
 }
 .websiteFrame {
      position: fixed;
@@ -108,7 +107,6 @@ footer {
      width: 100%;
      height: 15px;
  }
-
 .btn {
   border-radius: 4px;
   border: 2px solid black;
@@ -183,12 +181,10 @@ left: -6px;
     width: 60vw;
   }
 }
-
 @media screen and (max-width: 950px) {
   nav {
     grid-template-rows: 50px 50px;
     grid-template-columns: 120px 1fr 1fr 1fr;
-
   }
   .name {
     font-size: 1rem;
@@ -213,7 +209,7 @@ left: -6px;
   .nav-item3 {
     grid-column: 4/5;
     font-size: 0.8rem;
-}
+  }
 }
 @media screen and (max-width: 750px) {
   .button {
@@ -232,21 +228,21 @@ left: -6px;
     font-size: 0.9rem;
     line-height: 1.6;
   }
-.btn {
-  padding: 10px 0px 10px 0px;
-}
-.btn .btn-content {
-  right: 15px;
-}
-.btn .icon {
-  right: -50px;
-}
-.btn .icon i {
-  top: -2px;
-}
-.btn:hover .icon i {
-left: -37px;
-}
+  .btn {
+    padding: 10px 0px 10px 0px;
+  }
+  .btn .btn-content {
+    right: 15px;
+  }
+  .btn .icon {
+    right: -50px;
+  }
+  .btn .icon i {
+    top: -2px;
+  }
+  .btn:hover .icon i {
+  left: -37px;
+  }
 }
 @media screen and (max-width: 550px) {
   .name {

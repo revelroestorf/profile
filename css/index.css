@@ -81,7 +81,7 @@ p {
   line-height: 2rem;
   display: grid;
   grid-template-rows: 30px 30px;
-  grid-template-columns: 405px 1fr;
+  grid-template-columns: 396px 1fr;
 }
 .p1 {
   font-style: normal;
